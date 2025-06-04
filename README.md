@@ -25,7 +25,35 @@ This repository contains Python scripts to reproduce the experiments from our GN
 > 🔗 [BMHLab/TEPs-PEPs](https://github.com/BMHLab/TEPs-PEPs)  
 
 ---
+## ⚙️ Configuration
+The following configuration can be adjusted in GNB_main_2025.py:
 
+python
+Copy
+Edit
+CONFIG = {
+    "channel_index": 5,           # EEG channel index for C3
+    "target_method": "area",      # or "peak"
+    "random_state": 42,
+    "test_size": 0.2,
+    "features_type": "allbands"   # or "alpha"
+}
+---
+## 📊 Outputs
+Spearman’s ρ and normalized MSE (nMSE) across 5-fold subject-stratified CV
+
+SHAP plots showing feature importance
+
+Quartile-based signal plots for predicted vs. true trial groups
+
+Statistical comparisons between prediction targets
+---
+## 📦 Citation
+If you use this code or data in your work, please cite:
+
+S. Moaveninejad et al., “Prediction of TMS-evoked Potentials from Pre-stimulus Spectral Features: A Machine Learning Approach,” GNB 2025, Palermo, Italy.
+
+---
 ## 🚀 How to Run
 
 1. **Clone this repository**
