@@ -1,9 +1,25 @@
 # Predicting TMS-Evoked Potentials from Pre-Stimulus EEG Features
 
-This repository contains Python scripts to reproduce the experiments from our GNB 2025 conference paper:
+This repository contains Python scripts and supporting data used in the study:
 
 **“Prediction of TMS-evoked Potentials from Pre-stimulus Spectral Features: A Machine Learning Approach”**  
-*Authors: Sadaf Moaveninejad et al.*
+*Presented at GNB 2025 (June 16–18), Palermo, Italy*  
+*Authors: Sadaf Moaveninejad, Antonio Luigi Bisogno, Simone Cauzzo, Maurizio Corbetta, Camillo Porcaro*
+
+---
+
+## 📘 Project Summary
+
+Transcranial Magnetic Stimulation (TMS) combined with EEG enables non-invasive assessment of brain responsiveness.  
+This project explores how **pre-stimulus spectral features** (from delta to gamma bands) can **predict TMS-evoked potentials (TEPs)** — specifically, the **peak amplitude** and **signal area** of post-stimulus activity.
+
+A **Random Forest Regressor** was trained using **subject-stratified 5-fold cross-validation** to ensure generalization.  
+Results indicate that predicting **signal area** outperforms peak amplitude in accuracy and correlation.
+
+🔍 This work provides insight into the role of brain state in shaping neural responses, and guides more personalized and efficient TMS interventions.
+
+🖼️ The poster associated with this study is included in this repository as:
+**`GNB25_poster_SM.pdf`**
 
 ---
 
@@ -12,6 +28,7 @@ This repository contains Python scripts to reproduce the experiments from our GN
 ```
 ├── GNB_main_2025.py         # Main script: ML pipeline, evaluation, SHAP
 ├── GNB_functions_2025.py    # Helper functions: target extraction, SHAP, visualization
+├── GNB25_poster_SM.pdf      # Conference poster (GNB 2025, Palermo)
 ├── RogashData/              # Pre-extracted features and EEG data
 │   ├── alpha.npy
 │   ├── beta.npy
