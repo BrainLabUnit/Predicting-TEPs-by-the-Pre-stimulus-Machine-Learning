@@ -26,6 +26,36 @@ Results indicate that predicting **signal area** outperforms peak amplitude in a
 ## 📂 Repository Structure
 
 ```
+├── GNB_main_2025.py         # Main script that performs:
+│   ├── Configuration and loading of EEG features
+│   ├── Preprocessing and data-frame construction
+│   ├── Target extraction from post-stimulus signal
+│   ├── Subject-stratified 5-fold cross-validation
+│   ├── Hyperparameter tuning using GridSearchCV
+│   ├── Model evaluation (nMSE, Spearman’s ρ, CI bootstrapping)
+│   ├── Quartile-based EEG signal visualization
+│   └── SHAP-based feature importance analysis
+│
+├── GNB_functions_2025.py    # Helper functions:
+│   ├── compute_targets: extract TEP metrics (area, peak, latency, etc.)
+│   ├── interpret_model_with_importance: SHAP-based feature interpretation
+│   └── visualize_quartiles_comparison_fixed_ylim: EEG quartile group comparison
+│
+├── GNB25_poster_SM.pdf      # Conference poster (GNB 2025, Palermo)
+│
+├── RogashData/              # Pre-extracted features and EEG data
+│   ├── alpha.npy
+│   ├── beta.npy
+│   ├── delta.npy
+│   ├── gamma.npy
+│   ├── theta.npy
+│   ├── pre_stimulus_c3.npy
+│   ├── post_stimulus_c3.npy
+│   └── TrialsVsSubjects.xlsx
+```
+
+
+```
 ├── GNB_main_2025.py         # Main script: ML pipeline, model training, evaluation, visualization
 ├── GNB_functions_2025.py    # Helper functions:
 │                            # - compute_targets: extract TEP metrics (area, peak, latency, etc.)
