@@ -70,6 +70,23 @@ CONFIG = {
 
 ---
 
+## 🧩 GNB_functions_2025.py Overview
+
+This script contains reusable functions used in the main pipeline, including:
+
+- `compute_targets`:  
+  Extracts post-stimulus features such as **area**, **peak amplitude**, **AUC**, **latency**, **slope**, and **energy** from EEG trials.
+
+- `interpret_model_with_importance`:  
+  Uses **SHAP** (Shapley Additive Explanations) to visualize the contribution of each frequency band feature to model predictions.
+
+- `visualize_quartiles_comparison_fixed_ylim`:  
+  Generates a 2×2 subplot visualization comparing **true vs. predicted quartile groups** based on EEG signal response (with fixed y-axis limits).
+
+These utility functions support model interpretability, visualization, and target extraction for TMS-EEG regression tasks.
+
+---
+
 ## 📦 Citation
 
 If you use this code or data in your work, please cite:
