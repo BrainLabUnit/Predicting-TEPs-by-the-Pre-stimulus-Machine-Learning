@@ -4,9 +4,6 @@
 ![Repo size](https://img.shields.io/github/repo-size/BrainLabUnit/Predicting-TEPs-by-the-Pre-stimulus-Machine-Learning)
 ![Last commit](https://img.shields.io/github/last-commit/BrainLabUnit/Predicting-TEPs-by-the-Pre-stimulus-Machine-Learning)
 
-
-# Predicting TMS-Evoked Potentials from Pre-Stimulus EEG Features
-
 This repository contains Python scripts and supporting data used in the study:
 
 **“Prediction of TMS-evoked Potentials from Pre-stimulus Spectral Features: A Machine Learning Approach”**  
