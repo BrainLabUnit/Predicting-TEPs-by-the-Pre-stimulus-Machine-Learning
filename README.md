@@ -54,41 +54,6 @@ Results indicate that predicting **signal area** outperforms peak amplitude in a
 │   └── TrialsVsSubjects.xlsx
 ```
 
-
-```
-├── GNB_main_2025.py         # Main script: ML pipeline, model training, evaluation, visualization
-├── GNB_functions_2025.py    # Helper functions:
-│                            # - compute_targets: extract TEP metrics (area, peak, latency, etc.)
-│                            # - interpret_model_with_importance: SHAP-based feature analysis
-│                            # - visualize_quartiles_comparison_fixed_ylim: EEG response quartile plots
-├── GNB25_poster_SM.pdf      # Conference poster (GNB 2025, Palermo)
-├── RogashData/              # Pre-extracted features and EEG data
-│   ├── alpha.npy
-│   ├── beta.npy
-│   ├── delta.npy
-│   ├── gamma.npy
-│   ├── theta.npy
-│   ├── pre_stimulus_c3.npy
-│   ├── post_stimulus_c3.npy
-│   └── TrialsVsSubjects.xlsx
-```
-
-
-```
-├── GNB_main_2025.py         # Main script: ML pipeline, evaluation, SHAP
-├── GNB_functions_2025.py    # Helper functions: target extraction, SHAP, visualization
-├── GNB25_poster_SM.pdf      # Conference poster (GNB 2025, Palermo)
-├── RogashData/              # Pre-extracted features and EEG data
-│   ├── alpha.npy
-│   ├── beta.npy
-│   ├── delta.npy
-│   ├── gamma.npy
-│   ├── theta.npy
-│   ├── pre_stimulus_c3.npy
-│   ├── post_stimulus_c3.npy
-│   └── TrialsVsSubjects.xlsx
-```
-
 ⚠️ The data in `RogashData/` is derived from the **public dataset** available at:  
 🔗 [BMHLab/TEPs-PEPs](https://github.com/BMHLab/TEPs-PEPs)
 
